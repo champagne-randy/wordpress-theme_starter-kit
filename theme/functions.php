@@ -3,7 +3,6 @@
  * Theme Functions &
  * Functionality
  *
- * @author Mozaik Ltd. <http://mozaik.com>
  */
 
 
@@ -70,8 +69,13 @@ function theme_setup() {
 	*/
 
 
+	// Stop WP from printing emoji service on the front
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+
 	// Remove toolbar for all users in front end
-	// show_admin_bar( false );
+	show_admin_bar( false );
 
 
 	// Add Custom Image Sizes
@@ -101,12 +105,8 @@ function theme_setup() {
 	*/
 
 
-	// You can load library files here
-	/*
-	get_template_part( 'library/class-walker-bem-menu' );
-	get_template_part( 'library/class-bem-pagination' );
-	...
-	*/
+	// Library Loader
+	get_template_part( 'library/library-loader' );
 }
 
 
