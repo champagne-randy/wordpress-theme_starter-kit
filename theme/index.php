@@ -12,7 +12,7 @@
 
 			<header>
 				<h1 class="hero__title">
-					The Mozaik WordPress Theme Starter
+					Randy's awesome Theme<br>base on: The Mozaik WordPress Theme Starter. Zanmi!
 				</h1>
 			</header>
 

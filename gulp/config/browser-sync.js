@@ -4,4 +4,7 @@
  * Config
  *
  */
-module.exports = {};
+module.exports = {
+	proxy: "192.168.33.10",
+	files: "./theme/**/*"
+};
